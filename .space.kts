@@ -15,5 +15,5 @@ job("Publish package on new version tag") {
         }
     }
 
-    gradle("openjdk:17", "build", "publish")
+    gradle(null, "build", "publish")
 }
