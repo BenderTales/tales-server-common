@@ -79,8 +79,8 @@ publishing {
         maven {
             url "https://maven.pkg.jetbrains.space/tales-of-bender/p/mcsrv/maven"
             credentials {
-                username = System.getenv("TOB_SPACE_USERNAME")
-                password = System.getenv("TOB_SPACE_PASSWORD")
+                username = project.findProperty("TOB_SPACE_USERNAME") ?: System.getenv("TOB_SPACE_USERNAME")
+                password = project.findProperty("TOB_SPACE_PASSWORD") ?: System.getenv("TOB_SPACE_PASSWORD")
             }
         }
     }
