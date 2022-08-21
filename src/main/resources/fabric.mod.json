@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tales-server-common",
+  "version": "${version}",
+  "name": "Tales Server Common",
+  "description": "",
+  "authors": [
+    "Nokorbis"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/tales-server-common/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.bendertales.mc.talesservercommon.TalesServerCommon"
+    ]
+  },
+  "mixins": [
+    "tales-server-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "fabric-permissions-api-v0": "*"
+  }
+}
