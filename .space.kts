@@ -19,6 +19,6 @@ job("Publish package on new version tag") {
         }
     }
 
-    gradle(null, "build")
-    gradle(null, "publish")
+    gradlew(null, "build")
+    gradlew(null, "publish")
 }
