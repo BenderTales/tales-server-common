@@ -7,11 +7,7 @@
 job("Publish package on new version tag") {
 	startOn {
         gitPush {
-            branchFilter {
-                +"refs/heads/master"
-            }
-
-            tagFilter {
+             tagFilter {
                 +"snapshot-*"
                 +"rc-*"
                 +"release-*"
