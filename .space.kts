@@ -15,6 +15,10 @@ job("Publish package on new version tag") {
         }
     }
 
-    gradlew(null, "build")
-    gradlew(null, "publish")
+    container("displayName = 'Run gradle build & publish', image = gradle:jdk17") {
+        kotlinScript { api ->
+            api.gradle("build")
+            api.gradle("publish")
+        }
+    }
 }
