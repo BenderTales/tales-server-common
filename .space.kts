@@ -8,9 +8,17 @@ job("Publish package on new version tag") {
 	startOn {
         gitPush {
             branchFilter {
-                +"refs/heads/release-*"
+                +"refs/heads/master"
             }
-            
+
+            tagFilter {
+                +"snapshot-*"
+                +"rc-*"
+                +"release-*"
+            }
         }
     }
+
+    gradle(null, "build")
+    gradle(null, "publish")
 }
