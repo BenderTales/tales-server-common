@@ -28,7 +28,7 @@ public class ConfigRepository<CONFIG, FILE_CONTENT> {
 		return new ConfigRepositoryBuilder<>();
 	}
 
-	ConfigRepository(Class<FILE_CONTENT> fileClass,
+	public ConfigRepository(Class<FILE_CONTENT> fileClass,
 	                 Supplier<FILE_CONTENT> defaultFileContentSupplier,
 	                 FileContentChecker<? super FILE_CONTENT> fileContentChecker,
 	                 Supplier<Path> configPathProvider,
