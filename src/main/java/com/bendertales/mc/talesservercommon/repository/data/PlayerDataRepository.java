@@ -3,6 +3,7 @@ package com.bendertales.mc.talesservercommon.repository.data;
 import java.nio.file.Path;
 import java.util.UUID;
 
+import com.bendertales.mc.talesservercommon.repository.ModPaths;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 
@@ -13,7 +14,7 @@ public abstract class PlayerDataRepository<DATA, FILE_CONTENT>
 
 	public PlayerDataRepository(String modId, Class<FILE_CONTENT> fileClass) {
 		super(fileClass);
-		this.dataFolder = createFabricDataFolder(modId, "players");
+		this.dataFolder = ModPaths.createDataFolder(modId, "players");
 	}
 
 	@Override

@@ -41,20 +41,6 @@ public abstract class AbtractDataRepository<KEY, FILE_CONTENT, DATA>
 		return gsonBuilder.create();
 	}
 
-	protected Path createFabricDataFolder(String modId) {
-		return createFabricDataFolder(modId, null);
-	}
-
-	protected Path createFabricDataFolder(String modId, String subFolder) {
-		var targetFolder = FabricLoader.getInstance().getGameDir()
-		                               .resolve("mods").resolve(modId);
-		if (StringUtils.isNotBlank(subFolder)) {
-			targetFolder = targetFolder.resolve(subFolder);
-		}
-
-		return targetFolder;
-	}
-
 	public DATA load(KEY key) {
 		var fileContent = tryLoadContent(key);
 		return convert(fileContent);
