@@ -6,12 +6,12 @@ import java.util.UUID;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 
-public abstract class PlayerDataRepositoryAbstractCleaning<DATA, FILE_CONTENT>
+public abstract class PlayerDataRepository<DATA, FILE_CONTENT>
 		extends AbstractCachedDataRepository<ServerPlayerEntity, UUID, DATA, FILE_CONTENT> {
 
 	private final Path dataFolder;
 
-	public PlayerDataRepositoryAbstractCleaning(String modId, Class<FILE_CONTENT> fileClass) {
+	public PlayerDataRepository(String modId, Class<FILE_CONTENT> fileClass) {
 		super(fileClass);
 		this.dataFolder = createFabricDataFolder(modId, "players");
 	}
