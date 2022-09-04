@@ -10,10 +10,9 @@ public abstract class AbstractCachedDataRepository<KEY, ID, DATA, FILE_CONTENT>
 		extends AbtractDataRepository<KEY, FILE_CONTENT, DATA>
 		implements ICachedDataRepository<KEY, ID, DATA> {
 
-	private final Object2ObjectMap<ID, DATA> cachedData = new Object2ObjectOpenHashMap<>();
+	protected final Object2ObjectMap<ID, DATA> cachedData = new Object2ObjectOpenHashMap<>();
 
-	public AbstractCachedDataRepository(
-			Class<FILE_CONTENT> fileClass) {
+	public AbstractCachedDataRepository(Class<FILE_CONTENT> fileClass) {
 		super(fileClass);
 	}
 

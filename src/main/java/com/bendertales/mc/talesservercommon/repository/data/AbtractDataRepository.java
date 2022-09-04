@@ -8,16 +8,14 @@ import java.util.List;
 import com.bendertales.mc.talesservercommon.repository.serialization.JsonSerializerRegistration;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import net.fabricmc.loader.api.FabricLoader;
-import org.apache.commons.lang3.StringUtils;
 
 
 public abstract class AbtractDataRepository<KEY, FILE_CONTENT, DATA>
 	implements  IDataRepository<KEY, DATA> {
 
-	private final Class<FILE_CONTENT>    fileClass;
+	protected final Class<FILE_CONTENT>    fileClass;
 
-	private final Gson gson;
+	protected final Gson gson;
 
 	public AbtractDataRepository(Class<FILE_CONTENT> fileClass) {
 		this.fileClass = fileClass;
