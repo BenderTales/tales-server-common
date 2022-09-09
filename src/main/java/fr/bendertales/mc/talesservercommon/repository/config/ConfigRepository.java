@@ -1,11 +1,11 @@
-package com.bendertales.mc.talesservercommon.repository.config;
+package fr.bendertales.mc.talesservercommon.repository.config;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-import com.bendertales.mc.talesservercommon.repository.serialization.JsonSerializerRegistration;
+import fr.bendertales.mc.talesservercommon.repository.serialization.JsonSerializerRegistration;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 

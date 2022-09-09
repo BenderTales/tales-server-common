@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.commands;
+package fr.bendertales.mc.talesservercommon.commands;
 
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import net.minecraft.server.command.ServerCommandSource;

@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon;
+package fr.bendertales.mc.talesservercommon;
 
 import net.fabricmc.api.ModInitializer;
 

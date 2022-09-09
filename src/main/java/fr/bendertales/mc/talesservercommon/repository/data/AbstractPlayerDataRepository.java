@@ -1,11 +1,11 @@
-package com.bendertales.mc.talesservercommon.repository.data;
+package fr.bendertales.mc.talesservercommon.repository.data;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.UUID;
 
-import com.bendertales.mc.talesservercommon.repository.ModPaths;
+import fr.bendertales.mc.talesservercommon.repository.ModPaths;
 import net.minecraft.server.network.ServerPlayerEntity;
 
 

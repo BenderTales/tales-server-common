@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.repository.data;
+package fr.bendertales.mc.talesservercommon.repository.data;
 
 public interface IDataRepository <KEY, DATA> {
 

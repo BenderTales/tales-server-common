@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.helpers;
+package fr.bendertales.mc.talesservercommon.helpers;
 
 import java.util.Collection;
 

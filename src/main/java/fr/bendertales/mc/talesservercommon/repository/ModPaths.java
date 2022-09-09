@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.repository;
+package fr.bendertales.mc.talesservercommon.repository;
 
 import java.nio.file.Path;
 

@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.commands;
+package fr.bendertales.mc.talesservercommon.commands;
 
 import java.util.HashSet;
 import java.util.List;

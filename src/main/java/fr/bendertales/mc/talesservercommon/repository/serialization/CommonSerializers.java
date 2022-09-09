@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.repository.serialization;
+package fr.bendertales.mc.talesservercommon.repository.serialization;
 
 import net.minecraft.util.Identifier;
 

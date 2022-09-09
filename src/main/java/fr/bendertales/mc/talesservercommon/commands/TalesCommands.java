@@ -1,9 +1,9 @@
-package com.bendertales.mc.talesservercommon.commands;
+package fr.bendertales.mc.talesservercommon.commands;
 
 import java.util.Collection;
 import java.util.function.Predicate;
 
-import com.bendertales.mc.talesservercommon.helpers.Perms;
+import fr.bendertales.mc.talesservercommon.helpers.Perms;
 import net.minecraft.server.command.ServerCommandSource;
 
 

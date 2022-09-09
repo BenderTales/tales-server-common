@@ -1,4 +1,4 @@
-package com.bendertales.mc.talesservercommon.repository.data;
+package fr.bendertales.mc.talesservercommon.repository.data;
 
 import java.util.Set;
 import java.util.function.Consumer;
